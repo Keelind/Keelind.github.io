@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <body background="images/marble1.jpg" alt="white marble backdrop" <body>
+ <!DOCTYPE html>
+<html>
+<head>
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<div id="txt"></div>
+
+</body>
+</html>
+   
+    <meta charset="utf-8">
+    <title>Resume</title>
+  </head>
+  <body>
+    <center><a href="index.html">HOME</a>
+    <a href="Aboutme.html">ABOUT ME</a>
+    <a href="Resume.html">RESUME</a>
+    <a href="portfolio.html">PORTFOLIO</a>
+    <a href="Tips and Tricks.html">TIPS AND TRICKS</a><center>
+    <center><h1><tt> MY RESUME </tt> </h1></center>
+    <center><h3> <img src="images/resume.png" alt="my resume" height="400"></h3></center>
+    <center><h3> <img src="images/stars.png" alt= "two stars" height="100"></h3></center>
+  </body>
+</html>
